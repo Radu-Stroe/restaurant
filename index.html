@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant</title>
+        <script src="https://kit.fontawesome.com/014ce0eac4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../src/style.css">
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                const uluru = { lat: 44.42047715449619, lng: 26.07460601957103 };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 18,
+                center: uluru,
+                });
+                // The marker, positioned at Uluru
+                const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                });
+            }
+        </script>
+        <script async src="bundle.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <!-- <header id="header">
+                <h1>Regianno</h1>
+                <nav class="nav-bar">
+                    <button class="home">Home</button>
+                    <button class="menu">Menu</button>
+                    <button class="contact">Contact</button>
+                </div>
+            </header> -->
+            <!-- <main id="main">
+                <div class="home">
+                    <p>Not just pizza, best pizza!</p>
+                    <p>Made with passion, made for you!</p>
+                    <p>Since 1983</p>
+                    <img src="../src/chef.jpg" alt="chef">
+                    <p>Order online or visit us!</p>
+                </div>
+                <div class="menu">
+                    <div class="menuItem">
+                        <img src="/src/pizza_images/pizza1.png" alt="">
+                        <h2>Con Carne</h2>
+                        <p>Tomato sauce, Mozarella, Sausage, Bacon, Garlic, Chilli</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="/src/pizza_images/pizza2.png" alt="">
+                        <h2>Bueno</h2>
+                        <p>Tomato sauce, Mozarella, Chilli flakes, Olives, Basil</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="/src/pizza_images/pizza3.png" alt="">
+                        <h2>Gamberi</h2>
+                        <p>Tomato sauce, Mozarella, Shrimps, Cheese, Olives, Basil</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="/src/pizza_images/pizza4.png" alt="">
+                        <h2>Pesti</h2>
+                        <p>White sauce, Mozarella, Shrimps, Salmon, Olives, Basil</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="/src/pizza_images/pizza5.png" alt="">
+                        <h2>Peperroni</h2>
+                        <p>Tomato sauce, Mozarella, Chilli flakes, Pepperoni, Basil</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="/src/pizza_images/pizza6.png" alt="">
+                        <h2>Mexican</h2>
+                        <p>Tomato sauce, Mozarella, Onion, Pepper, Corn, Basil</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="/src/pizza_images/pizza7.png" alt="">
+                        <h2>Pomodoro</h2>
+                        <p>Tomato sauce, Mozarella, Tomato, Onion, Feta cheese, Chilli</p>
+                    </div>
+                    <div class="menuItem">
+                        <img src="/src/pizza_images/pizza8.png" alt="">
+                        <h2>Pineapple</h2>
+                        <p>Tomato sauce, Bacon, Pineapple, Olives, Basil</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h3>Contact us</h3>
+                    <p>Bv. Tudor Vladimirescu 35, București</p>
+                    <p>Tel: 0748848444</p>
+                    <div id="map"></div>
+                </div>
+            </main>
+            <footer id="footer">
+                <p>Copyright © 2022 Radu <i class="fab fa-github-square"></i></p>
+            </footer>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVrdGLSjppEn0vaHP1PsrSCHIYnTVbB5w&callback=initMap&libraries=&v=weekly"
+            async
+            ></script> -->
+        </div>
+    </body>
+</html>
