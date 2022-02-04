@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(Comforter-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+html {
+    background: url(pizza-bg.jpg) center center no-repeat fixed;
+    width: 100%;
+    background-size: cover;
+  }
+
+/* HEADER */
+
+#header {
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 200px;
+    padding-top: 10px;
+}
+
+#header h1 {
+    font-family: 'MyFont';
+    font-size: 100px;
+}
+
+.nav-bar button {
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    /* border-bottom: 2px solid white; */
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.nav-bar button:hover {
+    top: -10px;
+}
+
+/* MAIN */
+
+#main .home {
+    margin: 70px auto 0;
+    padding: 50px 0;
+    height: 480px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.589);
+    /* display: none; */
+}
+
+.home img {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    margin: 20px 0;
+}
+
+.home p {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+#main .menu {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.389);
+    margin: 70px auto 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+
+    display: none;
+}
+
+.menuItem {
+    background-color: rgba(0, 0, 0, 0.589);
+    padding: 15px 30px;
+}
+
+.menuItem:hover {
+    background-color: rgba(0, 0, 0, 0.440);
+}
+
+.menuItem img {
+    width: 100px;
+    height: 100px;
+}
+
+.menuItem p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#main .contact {
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 40%;
+    margin: 70px auto 0;
+    padding: 20px;
+    display: none;
+}
+
+.contact h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
+  
+
+/* FOOTER */
+
+
+#footer {
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 30px;
+    font-size: 20px;
+    padding-top: 5px;
+}
