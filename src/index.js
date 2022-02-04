@@ -1,14 +1,16 @@
 import './style.css';
-import {homeButton, menuButton, contactButton, headerComponent} from './header';
+import headerComponent from './header';
 
 const content = document.querySelector('#content');
 
 const mainComponent = (() => {
     //HEADER
-    headerComponent();
-    homeButton.addEventListener('click', () => console.log('Home'));
-    menuButton.addEventListener('click', () => console.log('Menu'));
-    contactButton.addEventListener('click', () => console.log('Contact'));
+    
+    headerComponent(homeEvent, menuEvent, contactEvent);
+
+    function homeEvent() {console.log('Home');} 
+    function menuEvent() {console.log('Menu');}
+    function contactEvent() {console.log('Contact')};
 
 })();
   

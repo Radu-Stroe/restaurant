@@ -1,10 +1,6 @@
 import './style.css';
 
-const homeButton = document.createElement('button');
-    const menuButton = document.createElement('button');
-    const contactButton = document.createElement('button');
-
-const headerComponent = () => {
+const headerComponent = (homeEvent, menuEvent, contactEvent) => {
     const header = document.createElement('header');
     header.setAttribute('id', 'header');
     content.appendChild(header);
@@ -17,9 +13,9 @@ const headerComponent = () => {
     navBar.classList.add('nav-bar');
     header.appendChild(navBar);
 
-    // const homeButton = document.createElement('button');
-    // const menuButton = document.createElement('button');
-    // const contactButton = document.createElement('button');
+    const homeButton = document.createElement('button');
+    const menuButton = document.createElement('button');
+    const contactButton = document.createElement('button');
 
     homeButton.classList.add('home');
     menuButton.classList.add('menu');
@@ -33,7 +29,9 @@ const headerComponent = () => {
     navBar.appendChild(menuButton);
     navBar.appendChild(contactButton);
 
-
+    homeButton.addEventListener('click', homeEvent);
+    menuButton.addEventListener('click', menuEvent);
+    contactButton.addEventListener('click', contactEvent);
 }
 
-export {homeButton, menuButton, contactButton, headerComponent};
+export default headerComponent;
