@@ -1,6 +1,6 @@
 import './style.css';
 
-const headerComponent = (homeEvent, menuEvent, contactEvent) => {
+const headerComponent = (content, homeEvent, menuEvent, contactEvent) => {
     const header = document.createElement('header');
     header.setAttribute('id', 'header');
     content.appendChild(header);
