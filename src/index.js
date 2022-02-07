@@ -1,21 +1,25 @@
 import headerComponent from './header';
+import mainComponent from './main';
 import footerComponent from './footer';
 
-const mainComponent = (() => {
-    const content = document.querySelector('#content');
+const content = document.querySelector('#content');
 
 
-    //HEADER
-    
-    headerComponent(content, homeEvent, menuEvent, contactEvent);
+//HEADER
 
-    function homeEvent() {console.log('Home');} 
-    function menuEvent() {console.log('Menu');}
-    function contactEvent() {console.log('Contact')};
+headerComponent(content, homeEvent, menuEvent, contactEvent);
 
-    //FOOTER
+function homeEvent() {console.log('Home');} 
+function menuEvent() {console.log('Menu');}
+function contactEvent() {console.log('Contact')};
 
-    footerComponent(content);
+//MAIN
 
-})();
+mainComponent(content);
+
+//FOOTER
+
+footerComponent(content);
+
+
   
