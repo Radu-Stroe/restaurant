@@ -1,7 +1,9 @@
 import './style.css';
 
+const home = document.createElement('div');
+
 const homeComponent = (main) => {
-    const home = document.createElement('div');
+
     home.classList.add('home');
     main.appendChild(home);
 
@@ -27,4 +29,4 @@ const homeComponent = (main) => {
 
 }
 
-export default homeComponent;
+export {home, homeComponent};

@@ -1,5 +1,5 @@
 import headerComponent from './header';
-import mainComponent from './main';
+import {home, menu, mainComponent} from './main';
 import footerComponent from './footer';
 
 const content = document.querySelector('#content');
