@@ -1,5 +1,5 @@
 import headerComponent from './header';
-import {home, menu, mainComponent} from './main';
+import {showHome, showMenu, showContact, mainComponent} from './main';
 import footerComponent from './footer';
 
 const content = document.querySelector('#content');
@@ -7,11 +7,7 @@ const content = document.querySelector('#content');
 
 //HEADER
 
-headerComponent(content, homeEvent, menuEvent, contactEvent);
-
-function homeEvent() {console.log('Home');} 
-function menuEvent() {console.log('Menu');}
-function contactEvent() {console.log('Contact')};
+headerComponent(content, showHome, showMenu, showContact);
 
 //MAIN
 
